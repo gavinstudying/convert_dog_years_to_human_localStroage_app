@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>妙麗歲數計算機</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>妙麗歲數計算機</h1>
+      <p class="subtitle">輸入小狗的生日，幫你換算成人類年齡</p>
+
+      <div class="dog-illustration" aria-hidden="true">
+        <div class="dog">
+          <div class="ear left-ear"></div>
+          <div class="ear right-ear"></div>
+          <div class="face">
+            <div class="eye left-eye"></div>
+            <div class="eye right-eye"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="blush left-blush"></div>
+            <div class="blush right-blush"></div>
+          </div>
+        </div>
+      </div>
+
+      <form id="ageForm" class="form">
+        <label for="birthdate">請選擇小狗生日</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <button type="submit">換算</button>
+        <button type="button" id="clearBtn" class="clear-btn">清除紀錄</button>
+
+        <div id="result" class="result">
+          <p>小狗的實際年齡：-- 歲</p>
+          <p>換算成人類年齡：-- 歲</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
